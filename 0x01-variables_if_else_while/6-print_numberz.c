@@ -1,18 +1,19 @@
 #include <stdio.h>
 
 /**
-* main - Print all single digit numbers using only putchar
-*
-* Return: Always 0 (Success)
-*/
+ * main - prints out all numbers under 10
+ * without using any char variables
+ * Return: 0
+ */
 int main(void)
 {
-	int digit;
+	int i = 48;
 
-	for (digit = 0; digit < 10; digit++)
-	putchar(digit + '0');
-
+	while (i < 58)
+	{
+		putchar(i);
+		i++;
+	}
 	putchar('\n');
-
 	return (0);
 }

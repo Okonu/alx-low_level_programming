@@ -1,24 +1,21 @@
 #include <stdio.h>
-
 /**
-* main - Print all possible combinations of single digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - prints out all the numbers under 10 with a ,
+ * Return: 0
+ */
 int main(void)
 {
-		int number;
+	int i;
 
-		for (number = 0; number <= 9; number++)
+	for (i = 48; i < 58; i++)
+	{
+		putchar(i);
+		if (i != 57)
 		{
-		putchar(number + '0');
-		if (number < 9)
-		{
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
-		}
-		putchar('\n');
-
+	}
+	putchar('\n');
 	return (0);
 }

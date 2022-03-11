@@ -1,17 +1,14 @@
 #include <stdio.h>
-
 /**
-* main - Print all single digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - prints out all numbers under 10
+ * Return: 0
+ */
 int main(void)
 {
-	int digit;
+	int i;
 
-	for (digit = 0; digit < 10; digit++)
-	printf("%i", digit);
-	putchar('\n');
-
+	for (i = 0; i < 10; i++)
+		printf("%i", i);
+	printf("\n");
 	return (0);
 }
