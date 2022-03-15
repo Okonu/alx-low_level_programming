@@ -1,26 +1,26 @@
 #include "holberton.h"
+
 /**
- * _abs- returns 1 if n is lowercase, 0 otherwise
- * @n: integer to be tested
- * Return: abs(n)
- */
-int _abs(int n)
-{
-	if (n >= 0)
-		return (n);
-	else
-		return (-1 * n);
-}
-/**
- * print_last_digit - pritns the last digit of a number
- * @n: integer whose last digit is to be printed
- * Return: lastdigit of n
- */
+* print_last_digit - Prints the last digit
+* of a number.
+*
+* @n: input number as an integer.
+*
+* Return: last digit.
+*/
 int print_last_digit(int n)
 {
-	int lastDigit;
+	int l;
 
-	lastDigit = _abs((n % 10));
-	_putchar(lastDigit + 48);
-	return (lastDigit);
+	l = n % 10;
+	if (l < 0)
+		{
+		_putchar(-l + 48);
+	return (-l);
+		}
+	else
+	{
+	_putchar(l + 48);
+	return (l);
+	}
 }

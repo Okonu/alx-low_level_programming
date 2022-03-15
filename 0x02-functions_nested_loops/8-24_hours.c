@@ -1,21 +1,32 @@
 #include "holberton.h"
+
 /**
- * jack_bauer - prints a 24 hour timer in military
- */
+* jack_bauer - prints every minute of the day
+*
+* Return: no return
+*/
 void jack_bauer(void)
 {
-	int i, j;
+	int a, b, c, d;
 
-	for (i = 0; i < 24; i++)
+	for (a = 48; a <= 50; a++)
 	{
-		for (j = 0; j < 60; j++)
+		for (b = 48; b <= 57; b++)
 		{
-			_putchar(i / 10 + 48);
-			_putchar(i % 10 + 48);
-			_putchar(':');
-			_putchar(j / 10 + 48);
-			_putchar(j % 10 + 48);
-			_putchar('\n');
+			for (c = 48; c <= 53; c++)
+			{
+				for (d = 48; d <= 57; d++)
+				{
+					if (a >= 50 && b >= 52)
+					break;
+					_putchar(a);
+					_putchar(b);
+					_putchar(58);
+					_putchar(c);
+					_putchar(d);
+					_putchar('\n');
+				}
+			}
 		}
 	}
 }

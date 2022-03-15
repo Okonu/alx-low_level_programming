@@ -1,12 +1,15 @@
 #include "holberton.h"
-/**
-*add-adds to numbers i and j
-*@i:number 1
-*@j:bumber 2
-*Return: returns i + j
-*/
-int add(int i, int j)
-{
-	return (i + j);
-}
 
+/**
+* add - a function that adds two integers
+* and returns the result.
+*
+* @a: number one.
+* @b: number two.
+*
+* Return: Add of number one and number two.
+*/
+int add(int a, int b)
+{
+	return (a + b);
+}
