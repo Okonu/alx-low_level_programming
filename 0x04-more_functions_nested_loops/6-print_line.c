@@ -1,13 +1,18 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
+
 /**
-* print_line - Write a function that draws a straight line in the terminal.
-* @n: Integer amount of _
-*/
+ * print_line - Print line dependent on the integer n.
+ * @n : The number of '_' characters to use
+ * Return: Void.
+ */
 void print_line(int n)
 {
-	char c;
+	int i;
 
-	for (c = 0; c < n; c++)
+	for (i = 0; i < n; i++)
+	{
 		_putchar('_');
+	}
 	_putchar('\n');
 }
