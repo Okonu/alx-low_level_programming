@@ -1,1 +1,2 @@
-This is the readme file for this directory
+# alx-low_level_programming
+Learning C programming

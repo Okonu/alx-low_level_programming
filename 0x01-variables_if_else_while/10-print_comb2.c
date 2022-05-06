@@ -1,30 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - prints out all the numbers between 00 and 99
- * Return: 0
- */
+* main - Print numbers from 00 to 99
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int i, j;
+	int tens;
+	int ones;
 
-	for (i = 48; i < 58; i++)
+		for (tens = 0; tens <= 9; tens++)
+   		 {
+		 for (ones = 0; ones <= 9; ones++)
 	{
-		for (j = 48; j < 58; j++)
-		{
-			putchar(i);
-			putchar(j);
-			if (i == 57 && j == 57)
-			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+	  putchar(tens + '0');
+	  putchar(ones + '0');
+
+	  if (!(tens == 9 && ones == 9))
+	    {
+	      putchar(',');
+	      putchar(' ');
+	    }
 	}
-	putchar('\n');
-	return (0);
+    }
+  putchar('\n');
+
+  return (0);
 }

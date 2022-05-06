@@ -1,36 +1,43 @@
 #include <stdio.h>
-
 /**
- * main - create 2 pairs of numbers that do not repeat
- * Return: 0
+ * main - Program entry point
+ *
+ * Return: 0 on success. Error code otherwise
  */
 int main(void)
 {
-	int j, i;
+	int c, i, k, j;
 
-	for (j = 0; j <= 99; j++)
+	for (c = 48; c <= 57; c++)
 	{
-		for (i = j; i <= 99; i++)
+		for (i = 48; i <= 57; i++)
 		{
-			if (i != j)
+			for (k = 48; k <= 57; k++)
 			{
-
-				putchar(j / 10 + 48);
-				putchar(j % 10 + 48);
-				putchar(' ');
-				putchar(i / 10 + 48);
-				putchar(i % 10 + 48);
-
-				if (j * 100 + i != 9899)
+				for (j = 48; j <= 57; j++)
 				{
-					putchar(',');
-					putchar(' ');
+					if (((k + j) > (c + i) &&  k >= c) || c < k)
+					{
+						putchar(c);
+						putchar(i);
+						putchar(' ');
+						putchar(k);
+						putchar(j);
+					if (c + i + k + j == 227 && c == 57)
+					{
+						break;
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					}
 				}
 			}
-
 		}
-
 	}
 	putchar('\n');
 	return (0);
 }
+

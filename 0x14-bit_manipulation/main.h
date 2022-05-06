@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,6 +8,8 @@
 #define  BIT_SIZE 8
 
 int _putchar(char c);
+int powX(int b, int p);
+int _len(const char *s);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 int get_bit(unsigned long int n, unsigned int index);
@@ -18,4 +20,4 @@ int get_endianness(void);
 int _strlen(const char *s);
 _Bool isBinary(char);
 
-#endif /* HOLBERTON_H */
+#endif /* MAIN_H */
